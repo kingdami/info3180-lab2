@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div id="main" style="display:inline-block">
+    <h2> Profile</h2><hr/><br/>
+    <div><img src="{{url_for('static', filename='j.png')}}"></img></div>
+    <div>
+        <p><strong>Damian Whyte</strong></p>
+        <p>{{current}}</p><hr/>
+        <p><strong>Username:</strong> Dami</p>
+        <p><strong>ID Number:</strong> 620012345</p>
+        <p><strong>Age:</strong> 57</p>
+        <p><strong>Gender: </strong>Male</p><hr/>
+        <p>I am a master Web Developer.</p>
+     </div>
+ </div>
+
+{% endblock %}
