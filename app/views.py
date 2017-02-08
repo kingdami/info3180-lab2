@@ -25,8 +25,7 @@ def profile():
     return render_template('profile.html', current= timeinfo())
 
 def timeinfo():
-    now = time.strftime("%c")
-    return "Today's date is " + time.strftime("%x")
+    return "Today's date is " + time.strftime("%a, %d %b %Y", time.gmtime())
 
 
 @app.route('/about/')
